@@ -8,7 +8,7 @@
   --paper-slider-knob-color: #fff !important;
 }
 ytmusic-app {
-  --ytmusic-player-bar-background: #0f0f11d;
+  --ytmusic-player-bar-background: #0f0f11;
 }
 ytmusic-player-page.ytmusic-app {
   background: rgba(0, 0, 0, 0.6);
@@ -112,7 +112,6 @@ ytmusic-player {
   background: transparent;
 }
 .description.ytmusic-description-shelf-renderer {
-  /*Your code should go under this comment*/
   font-family: "Inter" !important;
   font-size: 30px;
   font-weight: 600;
