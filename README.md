@@ -1,10 +1,6 @@
 # Modern-YouTube-Music-Theme
 Custom CSS for the YouTube Music web player with modern lyrics appearence
 
-
- 
-
-
 Heavily inspired by the theme on https://github.com/Venipa/ytmdesktop2
 
 To apply the theme on [YouTube Music for Desktop](https://github.com/Venipa/ytmdesktop2), download the **SCSS** file and set the custom SCSS file to 'mycustom.scss'
