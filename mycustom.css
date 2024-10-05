@@ -1,19 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
-    font-family: "Nunito" !important;
+    font-family: "Raleway" !important;
+    font-weight: 500 !important;
 }
 #progress-bar.ytmusic-player-bar {
-    --paper-slider-active-color: #fff;
-    --paper-slider-knob-color: #fff !important;
+    --paper-slider-active-color: #fff !important;
 }
+
+ytmusic-player-bar[enable-cairo-refresh-signature-moments-web] :hover#progress-bar.ytmusic-player-bar,
+ytmusic-player-bar[enable-cairo-refresh-signature-moments-web]:hover #progress-bar.ytmusic-player-bar {
+    --paper-slider-knob-color: #fff !important;
+    --paper-slider-knob-start-color: #fff !important;
+    --paper-slider-knob-start-border-color: #fff !important;
+    --paper-slider-active-color: #fff !important;
+}
+
 ytmusic-app {
     --ytmusic-player-bar-background: #0f0f11;
 }
+
 ytmusic-player-page.ytmusic-app {
     background: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(15px);
 }
+
 .content.ytmusic-player-page {
     padding: 0;
     visibility: visible;
@@ -25,13 +38,16 @@ ytmusic-player-page.ytmusic-app {
         }
     }
 }
+
 .image.ytmusic-player-bar {
     border-radius: 8px;
     transform: translate3d(0, 0, 1px);
 }
+
 ytmusic-player-queue {
     padding: 10px 0;
 }
+
 tp-yt-paper-icon-button.ytmusic-settings-button {
     width: 40px;
     height: 40px;
@@ -43,11 +59,22 @@ ytmusic-browse-response {
         visibility: visible !important;
     }
 }
+
 /* hide scrollbar */
 ytmusic-tab-renderer.ytmusic-player-page {
     padding-right: 12px;
     margin-right: -10px;
 }
+
+html.no-focus-outline body ytmusic-app ytmusic-app-layout#layout.style-scope.ytmusic-app div#content.style-scope.ytmusic-app ytmusic-browse-response#browse-page.style-scope.ytmusic-app div.background-gradient.style-scope.ytmusic-browse-response div#content-wrapper.style-scope.ytmusic-browse-response ytmusic-section-list-renderer.style-scope.ytmusic-browse-response div#contents.style-scope.ytmusic-section-list-renderer ytmusic-carousel-shelf-renderer.style-scope.ytmusic-section-list-renderer.fullbleed div.ytmusic-shelf.style-scope.ytmusic-carousel-shelf-renderer div#header-group.header-group.style-scope.ytmusic-carousel-shelf-renderer ytmusic-carousel-shelf-basic-header-renderer.header.style-scope.ytmusic-carousel-shelf-renderer ytmusic-thumbnail-renderer.image.style-scope.ytmusic-carousel-shelf-basic-header-renderer,
+html.no-focus-outline body ytmusic-app ytmusic-app-layout#layout.style-scope.ytmusic-app div#content.style-scope.ytmusic-app ytmusic-browse-response#browse-page.style-scope.ytmusic-app div.background-gradient.style-scope.ytmusic-browse-response div#content-wrapper.style-scope.ytmusic-browse-response ytmusic-section-list-renderer.style-scope.ytmusic-browse-response div#contents.style-scope.ytmusic-section-list-renderer ytmusic-carousel-shelf-renderer.style-scope.ytmusic-section-list-renderer.fullbleed div.ytmusic-shelf.style-scope.ytmusic-carousel-shelf-renderer div#header-group.header-group.style-scope.ytmusic-carousel-shelf-renderer ytmusic-carousel-shelf-basic-header-renderer.header.style-scope.ytmusic-carousel-shelf-renderer h2#content-group.content-group.style-scope.ytmusic-carousel-shelf-basic-header-renderer yt-formatted-string.strapline.text.style-scope.ytmusic-carousel-shelf-basic-header-renderer {
+    display: none;
+}
+
+html.no-focus-outline body ytmusic-app ytmusic-app-layout#layout.style-scope.ytmusic-app div#content.style-scope.ytmusic-app ytmusic-browse-response#browse-page.style-scope.ytmusic-app div.background-gradient.style-scope.ytmusic-browse-response div#content-wrapper.style-scope.ytmusic-browse-response ytmusic-section-list-renderer.style-scope.ytmusic-browse-response div#contents.style-scope.ytmusic-section-list-renderer ytmusic-carousel-shelf-renderer.style-scope.ytmusic-section-list-renderer.fullbleed div.ytmusic-shelf.style-scope.ytmusic-carousel-shelf-renderer div#header-group.header-group.style-scope.ytmusic-carousel-shelf-renderer ytmusic-carousel-shelf-basic-header-renderer.header.style-scope.ytmusic-carousel-shelf-renderer h2#content-group.content-group.style-scope.ytmusic-carousel-shelf-basic-header-renderer div#details.details.style-scope.ytmusic-carousel-shelf-basic-header-renderer {
+    margin: 15px;
+}
+
 ytmusic-player-queue-item {
     --ytmusic-player-queue-item-thumbnail-size: 42px !important;
     --ytmusic-list-item-height: 58px;
@@ -55,7 +82,9 @@ ytmusic-player-queue-item {
         margin-bottom: 8px;
     }
     border-radius: 8px;
-    transform: translate3d(0, 0, 1px);
+    transform: translate3d(0,
+    0,
+    1px);
     border: 0;
     opacity: 0.825;
     &:hover:not([selected]) {
@@ -63,9 +92,11 @@ ytmusic-player-queue-item {
         opacity: 1;
     }
 }
+
 .logo.ytmusic-nav-bar {
     filter: hue-rotate(210deg);
 }
+
 .ytmusic-play-button-renderer,
 .thumbnail.ytmusic-player-queue-item,
 .thumbnail-overlay,
@@ -74,14 +105,17 @@ ytmusic-two-row-item-renderer.ytmusic-carousel {
     overflow: hidden;
     transform: translate3d(0, 0, 1px);
 }
+
 ytmusic-player-bar.ytmusic-app {
     background: transparent;
 }
+
 #player-bar-background.ytmusic-app-layout {
     background-color: rgba(0, 0, 0, 0.5);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
 }
+
 #song-image.ytmusic-player,
 .song-media-controls.ytmusic-player,
 ytmusic-player.ytmusic-player-page {
@@ -89,31 +123,46 @@ ytmusic-player.ytmusic-player-page {
     overflow: hidden;
     transform: translate3d(0, 0, 1px);
 }
+
 tp-yt-paper-dialog,
 tp-yt-paper-listbox.ytmusic-menu-popup-renderer {
     background-color: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(10px);
     border: 0;
     box-shadow: 0px 4.1px 5.3px rgba(0, 0, 0, 0.028),
-        0px 13.6px 17.9px rgba(0, 0, 0, 0.042),
-        0px 61px 80px rgba(0, 0, 0, 0.07);
+    0px 13.6px 17.9px rgba(0, 0, 0, 0.042),
+    0px 61px 80px rgba(0, 0, 0, 0.07);
     border-radius: 8px;
 }
+
 yt-img-shadow[object-fit="COVER"] img.yt-img-shadow {
     border-radius: 30px;
+    object-fit: cover !important;
 }
+
 ytmusic-player {
     background: transparent;
 }
+
 .song-media-controls.ytmusic-player {
     border-radius: 25px;
 }
+
 .html5-video-player:not(.ytp-transparent) {
     border-radius: 25px;
     background: transparent;
 }
+
 .description.ytmusic-description-shelf-renderer {
     font-family: "Inter" !important;
     font-size: 30px;
     font-weight: 600;
+}
+
+/* Better Lyric Extension */
+.blyrics-container span {
+    font-family: "Inter" !important;
+    font-size: 45px;
+    font-weight: 650 !important;
+    line-height: 1.15;
 }
